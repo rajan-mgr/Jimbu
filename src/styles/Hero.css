@@ -1,0 +1,80 @@
+.hero {
+  background-image: url('../assets/hero3.jpg');
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative; /* needed for overlay positioning */
+  z-index: 1;
+  overflow: hidden;
+}
+
+/* Dark overlay over hero image */
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4); /* adjust opacity as needed */
+  z-index: 0; /* behind hero-content */
+}
+
+.hero-content {
+  position: relative; /* sits above overlay */
+  z-index: 1;
+  color: white;
+  text-align: center;
+  padding: 40px 60px;
+  border-radius: 12px;
+  /* box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); */
+  animation: fadeInUp 1s ease-out;
+}
+.hero-content .hero-para{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:20px;
+}
+.hero-content h1 {
+  font-size: 80px;
+  margin-bottom: 16px;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+}
+
+.hero-content .green-text {
+    font-family: 'Open Sans';
+    color:#41B349;
+    font-size:48px;
+     text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.hero-content .orange-text {
+    font-family: 'Open Sans';
+    color:#FBAC3C;
+    font-size:48px;
+      text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.hero-content .normal-text {
+    font-family: 'Open Sans';
+    color:white;
+    font-size:36px;
+      text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

@@ -1,0 +1,224 @@
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 40px;
+
+  background: rgba(255, 255, 255, 0); /* fully transparent */
+  backdrop-filter: blur(15px); /* blur whatever is behind it */
+  -webkit-backdrop-filter: blur(15px);
+
+  color: white;
+  position: fixed; /* so it stays on top of hero */
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1002;
+}
+
+/* Left, Center, Right */
+.left,
+.center {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.center {
+  justify-content: center;
+  flex: 1;
+  margin-left: 90px;
+}
+
+/* --- Animated Hamburger --- */
+.hamburger {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 1003; /* above header */
+}
+
+.hamburger span {
+  width: 25px;
+  height: 3px;
+  background: white;
+  transition: all 0.3s ease;
+}
+
+/* Hamburger animation when open */
+.hamburger.active span:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+  position: relative;
+  left: 70px;
+}
+
+.hamburger.active span:nth-child(2) {
+  opacity: 0;
+  transform: translateX(-20px);
+}
+
+.hamburger.active span:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
+  position: relative;
+  left: 70px;
+}
+
+/* --- Animated Nav --- */
+.nav {
+  position: fixed;
+  top: 0;
+  left: -300px; /* Hidden off-screen */
+  height: 100vh;
+  width: 280px;
+  background: rgba(17, 17, 17, 0.98);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  display: flex;
+  flex-direction: column;
+  padding: 80px 30px;
+  gap: 20px;
+  transition: left 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  z-index: 1000;
+  box-shadow: 2px 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.nav.open {
+  left: 0; /* Slide in from left */
+}
+
+.nav a {
+  color: white;
+  text-decoration: none;
+  padding: 12px 16px;
+  font-size: 18px;
+  /* border-radius: 8px; */
+  transition: all 0.3s ease;
+  opacity: 0;
+  display: block;
+  width: 100%;
+  transform: translateX(-20px);
+  margin-bottom: 10px;
+  border-bottom: 1px solid white;
+}
+
+/* Stagger animation for nav links */
+.nav.open a {
+  opacity: 1;
+  transform: translateX(0);
+}
+.nav a:hover {
+  transform: translateX(5px);
+  color: green;
+  border-color: green;
+}
+
+/* Overlay when nav is open */
+.nav-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.7);
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+  z-index: 999;
+}
+
+.nav-overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+.center {
+  margin-left: 300px;
+}
+.center span {
+  font-size: 65px;
+  opacity: 0.5;
+}
+/* --- Dropdown with animation --- */
+.right {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.dropdown-container {
+  position: relative;
+}
+
+.dropdown-btn {
+  background: rgba(255, 255, 255, 0); /* fully transparent */
+  backdrop-filter: blur(15px);
+  color: white;
+  padding: 20px 36px;
+  border: none;
+  cursor: pointer;
+  border: none;
+  transition: all 0.3s ease;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background: rgba(34, 34, 34, 0.95);
+  display: flex;
+  flex-direction: column;
+  border-radius: 4px;
+  overflow: hidden;
+  min-width: 180px;
+  margin-top: 4px;
+  opacity: 0;
+  transform: translateY(-10px);
+  visibility: hidden;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
+.dropdown-menu.open {
+  opacity: 1;
+  transform: translateY(0);
+  visibility: visible;
+}
+
+.dropdown-menu li {
+  list-style: none;
+}
+
+.dropdown-menu li a {
+  display: block;
+  padding: 10px 12px;
+  color: white;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.dropdown-menu li a:hover {
+  background: #444;
+  padding-left: 16px;
+}
+
+/* --- Book Button --- */
+.book {
+  /* background: rgba(230, 57, 70, 0.8); */
+  background: rgba(255, 255, 255, 0); /* fully transparent */
+  backdrop-filter: blur(15px);
+  color: white;
+  padding: 20px 36px;
+  margin-left: 16px;
+  cursor: pointer;
+  border: 1px solid white;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(6px);
+}
+
+.book:hover {
+  color: green;
+  border-color: green;
+}
