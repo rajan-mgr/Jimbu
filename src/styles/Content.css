@@ -1,0 +1,47 @@
+:root {
+  --swiper-navigation-color:rgb(245, 247, 250);
+}
+.content-container{
+    background-color:black;
+    color:white;
+    
+}
+.content-title h1{
+    text-align: center;
+    padding:40px 30px;
+    font-size:48px;
+    font-family: 'Open Sans', sans-serif;
+    color:#FBAC3C;
+}
+.content-title p{
+    height: 136px;
+    font-size:20px;
+    width: 1028px;
+    text-align: center;
+    margin-left:330px;
+}
+.left-right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.left button img {
+    width: 56px;
+    background:none;
+    height: 56px;
+}
+.right button img {
+    width: 56px;
+    height: 56px;
+}
+.swiper-button-prev {
+    color:black;
+}
+.swiper-button-next {
+    color:black;
+}
+.slider-image{
+    width: 562px;
+    height: 400px;
+}
