@@ -21,7 +21,6 @@ function Header() {
           <button
             className={`hamburger ${hamopen ? 'active' : ''}`}
             onClick={() => setHamopen(!hamopen)}
-            aria-label="Toggle Menu"
           >
             <span></span>
             <span></span>

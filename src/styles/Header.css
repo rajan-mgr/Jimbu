@@ -83,14 +83,17 @@
   transition: left 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
   z-index: 1000;
   box-shadow: 2px 0 20px rgba(0, 0, 0, 0.5);
+  
 }
 
 .nav.open {
-  left: 0; /* Slide in from left */
+  left: 0; 
+  
 }
 
 .nav a {
   color: white;
+  display: block;
   text-decoration: none;
   padding: 12px 16px;
   font-size: 18px;
@@ -102,12 +105,14 @@
   transform: translateX(-20px);
   margin-bottom: 10px;
   border-bottom: 1px solid white;
+  
 }
 
 /* Stagger animation for nav links */
 .nav.open a {
   opacity: 1;
   transform: translateX(0);
+  
 }
 .nav a:hover {
   transform: translateX(5px);

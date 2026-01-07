@@ -27,7 +27,7 @@
 .hero-content {
   position: relative; /* sits above overlay */
   z-index: 1;
-  color: white;
+  color: rgb(205, 201, 201);
   text-align: center;
   padding: 40px 60px;
   border-radius: 12px;
@@ -62,11 +62,41 @@
 
 .hero-content .normal-text {
     font-family: 'Open Sans';
-    color:white;
+    color: rgb(205, 201, 201);
     font-size:36px;
       text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
 }
 
+
+.list{
+  position:relative;
+  top:350px;
+  left:100px;
+  width: 140px;
+  height: 92;
+  color: rgb(205, 201, 201);
+  display: flex;
+  font-family: "Open Sans", sans-serif;
+  z-index:1;
+  gap:15px;
+  font-size:20px;
+}
+.list ul{
+  list-style:none;
+  cursor: pointer;
+}
+.list ul li:hover{
+  color:lightgreen;
+}
+.list img{
+  width:70px;
+  color: rgb(205, 201, 201);
+  height:80px;  
+}
+.list img:hover{
+  cursor: pointer;
+
+}
 
 @keyframes fadeInUp {
   from {
