@@ -1,0 +1,102 @@
+.menu-container {
+  background-color: black;
+  padding: 70px 30px;
+}
+.menu-title{
+     position: relative;
+}
+.menu-title h1 {
+  text-align: center;
+  padding: 40px 30px;
+  color: white;
+ 
+}
+.items-desc h1::after{
+    content: "";
+    position: absolute;
+    bottom:-6px;
+    left:0px;
+    height: 3px;
+    width: 40px;
+    background-color: red;
+    transition: 0.5s ease-in-out;
+}
+.items-desc h1:hover::after{
+    width: 100%;
+
+}
+
+.menu-items-flipped .items-desc h1::after{
+    content: "";
+    position: absolute;
+    bottom:-6px;
+    left:0px;
+    height: 3px;
+    width: 40px;
+    background-color: green;
+}
+.menu-items-flipped .items-desc h1:hover::after{
+    width: 100%;
+}
+.menu-title span {
+  font-family: "Lavishly Yours";
+  color: #f59205;
+  position: absolute;
+    top:42px;
+    left:720px;
+  
+  font-size: 48px;
+  text-align: center;
+}
+
+.starter-title h1 {
+  color: rgb(180, 174, 174);
+  text-align: center;
+  padding:30px 40px;
+}
+.menu-items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 50px;
+  gap: 70px;
+  width: auto;
+}
+.menu-items-flipped {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 50px;
+  gap: 70px;
+  width: auto;
+}
+
+.items-desc h1{
+     position: relative;
+}
+.items-desc h1 {
+  color: white;
+  font-size: 36px;
+  font-family: "Open Sans", sans-serif;
+}
+.items-desc p {
+  font-size: 18px;
+  color: white;
+  font-family: "Open Sans", sans-serif;
+}
+.items-desc p1 {
+  font-size: 30px;
+  color: white;
+  font-family: "Open Sans", sans-serif;
+}
+.items-desc {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+.menu-img img {
+  width: 542px;
+  height: 300px;
+  border-radius: 10px;
+}

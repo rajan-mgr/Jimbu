@@ -1,0 +1,83 @@
+.location-container {
+  background-color: black;
+  width: 100%;
+  /* width:  1552px;
+    height: 1028px; */
+}
+.location-container h1 {
+  text-align: center;
+  padding: 60px 30px;
+  color: #fbac3c;
+  font-size: 48px;
+  font-family: "Open Sans", sans-serif;
+}
+.locations {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  padding:20px;
+}
+.location-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.locations img {
+  width: 588px;
+  height: 350px;
+  object-fit: cover;
+}
+.tandi {
+  /* margin-top:15px; */
+  display: flex;
+  justify-content: space-between;
+  /* gap:160px; */
+  width: 100%;
+
+  align-items: center;
+}
+.tandi .icons {
+  display: flex;
+  cursor: pointer;
+  gap: 10px;
+}
+.summary a{
+    /* border-bottom:5px solid #fbac3c;  */
+    position: relative;
+}
+.summary a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  height: 5px;
+  width: 70px;
+  background: #fbac3c;
+  transition: width 0.3s ease;
+}
+
+.summary a:hover::after {
+  width: 100%;
+}
+.tandi .icons img {
+  width: 36px;
+  height: 36px;
+  background-color: green;
+  border-radius: 30px;
+  transition: 0.3s;
+  padding:5px;
+}
+.tandi .icons img:hover {
+  transform: scale(1.1);
+}
+.summary {
+  margin-top: 10px;
+}
+.summary a {
+  text-decoration: none;
+  color: white;
+  text-align: left;
+  font-size: 24px;
+  font-family: "Open Sans", sans-serif;
+}
