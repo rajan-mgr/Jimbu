@@ -52,6 +52,7 @@
 .starter-title h1 {
   color: rgb(180, 174, 174);
   text-align: center;
+  font-family: "Open Sans", sans-serif;
   padding:30px 40px;
 }
 .menu-items {
@@ -83,6 +84,7 @@
 .items-desc p {
   font-size: 18px;
   color: white;
+  width: 550px;
   font-family: "Open Sans", sans-serif;
 }
 .items-desc p1 {

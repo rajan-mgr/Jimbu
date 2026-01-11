@@ -3,6 +3,10 @@ import "../styles/Menu.css";
 import item1 from "../assets/menu1.webp";
 import item2 from "../assets/menu2.webp";
 import item3 from "../assets/menu3.webp";
+import item4 from "../assets/menu4.webp";
+import item5 from "../assets/menu5.webp";
+import item6 from "../assets/menu6.webp";
+import item7 from "../assets/menu7.webp";
 
 function Menu() {
   return (
@@ -76,6 +80,93 @@ function Menu() {
             <p1>Rs. 800</p1>
           </div>
         </div>
+      </div>
+      <div className="starter">
+        <div className="starter-title">
+          <h1>Main Course</h1>
+        </div>
+         <div className="menu-items">
+        <div className="menu-img">
+          <img src={item4} alt="img"></img>
+        </div>
+        <div className="items-desc">
+          <div>
+            <h1>Fish Fillet Steak</h1>
+          </div>
+          <div>
+            <p>
+             Pan-seared fish fillet served with seasonal vegetables and caper<br />  cream sauce
+            </p>
+          </div>
+          <div>
+            <p1>Rs. 900</p1>
+          </div>
+        </div>
+      </div>
+       <div className="menu-items-flipped">
+        <div className="menu-img">
+          <img src={item5} alt="img"></img>
+        </div>
+        <div className="items-desc">
+          <div>
+            <h1>Pork Belly With Rice</h1>
+          </div>
+          <div>
+            <p>
+             Slow cooked pork belly glazed with home made BBQ sauce.<br/>
+             Served with side of assorted vegetables and creamy Parmesan Rice.
+            </p>
+          </div>
+          <div>
+            <p1>Rs. 895</p1>
+          </div>
+        </div>
+      </div>
+      <div className="menu-items">
+        <div className="menu-img">
+          <img src={item7} alt="img"></img>
+        </div>
+        <div className="items-desc">
+          <div>
+            <h1>Timmur Chicken Burger</h1>
+          </div>
+          <div>
+            <p>
+             Burger bun filled with timmur chicken patty, lettuce, tomato, onion,<br/> and cheese. Served with kanchyamba  (Thakali Style)
+            </p>
+          </div>
+          <div>
+            <p1>Rs. 900</p1>
+          </div>
+        </div>
+      </div>
+       
+      </div>
+      <div className="starter">
+        <div className="starter-title">
+          <h1>Desserts</h1> </div>
+           <div className="menu-items">
+        <div className="menu-img">
+          <img src={item6} alt="img"></img>
+        </div>
+        <div className="items-desc">
+          <div>
+            <h1>Strawberry Cheese Cake</h1>
+            
+          </div>
+          <p>
+              Creamy baked cheesecake layered with fresh  strawberries and a graham <br/>cracker crust.
+            </p>
+          <div>
+            
+          </div>
+          <div>
+            <p1>Rs. 480</p1>
+          </div>
+        </div>
+      </div>
+
+       
       </div>
     </div>
   );
