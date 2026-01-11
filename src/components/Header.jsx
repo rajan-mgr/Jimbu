@@ -52,10 +52,10 @@ function Header() {
               Locations ▼
             </button>
             <ul className={`dropdown-menu ${open ? 'open' : ''}`}>
-              <li><a href="/locations/kalimati">Kalimati Branch</a></li>
-              <li><a href="/locations/baneshwor">New Baneshwor Branch</a></li>
-              <li><a href="/locations/jhamsikhel">Jhamsikhel Branch</a></li>
-              <li><a href="/locations/tangal">Tangal Branch</a></li>
+              <li><a href="/kalimati">Kalimati Branch</a></li>
+              <li><a href="/newbaneshwor">New Baneshwor Branch</a></li>
+              <li><a href="/jhamsikhel">Jhamsikhel Branch</a></li>
+              <li><a href="/tangal">Tangal Branch</a></li>
             </ul>
           </div>
           <button className="book">Book a Table</button>

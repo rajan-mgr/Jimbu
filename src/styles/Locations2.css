@@ -1,0 +1,65 @@
+.location2-container{
+    background-color: black;
+    color:#C9C9C9;
+    padding:160px 20px;
+}
+.location2-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:60px;
+
+}
+.location2-img img{
+    width: 850px;
+    height: 600px;
+}
+.location2-descrp h1{
+    color:#C9C9C9;
+    font-size: 40px;
+    font-family: "Open Sans", sans-serif;
+    margin-bottom: 50px;
+    font-weight: normal;
+
+
+}
+.location2-icons{
+    display: flex;
+    width: 300px;
+    flex-direction: column;
+    gap:20px;
+    
+}
+.location2-button button{
+    background-color:black;
+    margin-top:20px;
+    color:#C9C9C9;
+    font-size:18px;
+    font-family: "Open Sans", sans-serif;
+    padding:20px 25px;
+    border: 1px solid #c9c9c9;
+    cursor: pointer;
+
+}
+.location2-button button:hover{
+    color:green;
+    border-color: green;
+}
+.location2-icons a span{
+    cursor:pointer;
+    color:#C9C9C9;
+    font-size: 16px;
+    font-family: "Open Sans", sans-serif;
+}
+.location2-icons a span:hover{
+    color:green;
+}
+.location2-icons a{
+    display: flex;
+    align-items: center;
+    gap:20px;
+
+}
+.location2-button a{
+    text-decoration:none;
+}
