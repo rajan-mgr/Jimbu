@@ -8,7 +8,7 @@
 .menu-title h1 {
   text-align: center;
   padding: 40px 30px;
-  color: white;
+   color:#E0E0E0;
  
 }
 .items-desc h1::after{
@@ -75,6 +75,7 @@
 
 .items-desc h1{
      position: relative;
+      color:#E0E0E0;
 }
 .items-desc h1 {
   color: white;
@@ -83,13 +84,13 @@
 }
 .items-desc p {
   font-size: 18px;
-  color: white;
+   color:#E0E0E0;
   width: 550px;
   font-family: "Open Sans", sans-serif;
 }
 .items-desc p1 {
   font-size: 30px;
-  color: white;
+   color:#E0E0E0;
   font-family: "Open Sans", sans-serif;
 }
 .items-desc {
@@ -100,5 +101,21 @@
 .menu-img img {
   width: 542px;
   height: 300px;
-  border-radius: 10px;
+  
+}
+.menu-button{
+  display: flex;
+  margin-top:25px;
+  justify-content: center;
+  
+}
+.menu-button button{
+
+  background-color: #41B349;
+    padding: 25px 80px;
+    font-size:16px;
+    font-family: "Open Sans", sans-serif;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
 }

@@ -4,6 +4,9 @@ import Hero from './components/Hero'
 import Content from './components/Content'
 import Locations from './components/Locations'
 import Menu from './components/Menu'
+import Million from './components/Million'
+import Footer from './components/Footer'
+
 function App() {
   return (
     <>
@@ -12,6 +15,8 @@ function App() {
     <Content/>
     <Locations/>
     <Menu/>
+    <Million/>
+    <Footer/>
     </>
   )
 }

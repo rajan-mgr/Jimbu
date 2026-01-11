@@ -168,6 +168,10 @@ function Menu() {
 
        
       </div>
+      <div className="menu-button">
+        <button>VIEW FULL MENU ITEMS</button>
+
+      </div>
     </div>
   );
 }
