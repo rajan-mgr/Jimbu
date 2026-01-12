@@ -64,7 +64,7 @@
 .order-btn button:hover {
   transform: scale(1.03);
 }
-.menu-items {
+.menu-items3 {
   display: grid;
   grid-template-columns: repeat(3, minmax(380px, 1fr));
   gap: 40px 30px;

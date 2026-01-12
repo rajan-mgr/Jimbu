@@ -40,9 +40,9 @@ function Header() {
 
         {/* Center: Logos */}
         <div className="center">
-          <img src={jimbu} alt="Jimbu Logo" className="jimbu-logo" />
+        <a href='/'> <img src={jimbu} alt="Jimbu Logo" className="jimbu-logo" /></a> 
           <span> | </span>
-          <img src={triplogo} alt="Trip Logo" className="trip-logo" />
+         <a href='/'> <img src={triplogo} alt="Trip Logo" className="trip-logo" /></a> 
         </div>
 
         {/* Right: Dropdown + Book */}

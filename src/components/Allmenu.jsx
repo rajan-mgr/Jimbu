@@ -25,7 +25,7 @@ function Allmenu() {
           {MenuItems.map((cat) => (
             <button
               key={cat.category}
-              className={cat.category === selectedCategory}
+            
               onClick={() => setSelectedCategory(cat.category)}
             >
               {cat.category}
@@ -37,7 +37,7 @@ function Allmenu() {
         <div className="menu-items-wrapper">
           <h2 className="current-category-title">{selectedCategory}</h2>
 
-          <div className="menu-items">
+          <div className="menu-items3">
             {currentItems.map((item) => (
               <div key={item.name} className="menu-item">
                 <img src={item.image} alt={item.name} />
