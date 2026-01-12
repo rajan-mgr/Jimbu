@@ -11,6 +11,7 @@ import Kalimati from "./components/Kalimati";
 import Newbaneshwor from "./components/Newbaneshwor";
 import Jhamsikel from "./components/Jhamsikel";
 import Tangal from "./components/Tangal";
+import Allmenu from "./components/Allmenu";
 
 function Home() {
   return (
@@ -37,7 +38,7 @@ function App() {
         <Route path="/newbaneshwor" element={<Newbaneshwor />} />
         <Route path="/jhamsikhel" element={<Jhamsikel />} />
         <Route path="/tangal" element={<Tangal />} />
-
+        <Route path="/fullmenu" element={<Allmenu />} />
         
       </Routes>
 

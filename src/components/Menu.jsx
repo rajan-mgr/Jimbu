@@ -169,7 +169,7 @@ function Menu() {
        
       </div>
       <div className="menu-button">
-        <button>VIEW FULL MENU ITEMS</button>
+        <a href="/fullmenu"><button>VIEW FULL MENU ITEMS</button></a>
 
       </div>
     </div>
