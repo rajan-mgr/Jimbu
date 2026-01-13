@@ -1,0 +1,175 @@
+.contact-container{
+    background-color: black;
+}
+.contact-title{
+    padding-top:190px;
+    background-color: black;
+    text-align: center;
+    
+}
+.contact-title h1{
+    color:#f59205;
+    font-size:40px;
+    font-family: "Open Sans";
+    font-weight: normal;
+}
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    height: 800px;
+    gap:15px;
+    padding: 48px 44px;
+    /* border: 1px solid grey; */
+    background-color: #121212;
+}
+.contact-content{
+    display: flex;
+    padding-left: 90px;
+    gap:45px;
+
+}
+
+h1.reach{
+    background-color: black;
+    color:#c9c9c9;
+    font-size:40px;
+    font-weight: normal;
+    padding-left: 90px;
+    margin-bottom: 40px;
+    font-family: "Open Sans";
+    padding-top:50px;
+}
+.contact-form label{
+    font-family: "Open Sans";
+    color:#c9c9c9;
+}
+.contact-form input{
+    background-color: grey;
+    padding:20px 16px;
+    font-family: "Open Sans";
+}
+.contact-form textarea{
+    background-color: grey;
+   font-family: "Open Sans"; 
+   
+    
+}
+.contact-form textarea::placeholder{
+    color:#c9c9c9;
+    font-family: "Open Sans";
+}
+.contact-form input::placeholder{
+    color: #c9c9c9;
+    font-family: "Open Sans";
+}
+.mes-btn{
+    background-color: black;
+    border: 1px solid #c9c9c9;
+    color:#c9c9c9;
+    cursor: pointer;
+}
+.selection{
+    display: flex;
+    gap:25px;
+    align-items: left;
+   
+}
+.radio label{
+    display: flex;
+    gap:6px;
+}
+.radio h2{
+    color:#c9c9c9;
+    margin-bottom: 20px;
+}
+.contactus-add{
+    color: #c9c9c9;
+    width: 900px;
+    height: 800px;
+}
+.contactus-add p{
+    font-size:18px;
+    font-family: "Open Sans";
+}
+.contactus-add p a{
+    text-decoration: underline;
+    color:green;
+}
+.contactus-add p em{
+    font-weight: bold;
+}
+.branch-selector {
+    display: flex;
+    width: auto;
+   
+    padding-top:40px;
+    gap:30px;
+}
+.branch-selector button{
+    /* padding:2px 80px; */
+    background-color: black;
+    border:none;
+    color:#c9c9c9;
+    font-size:14px;
+    font-family: "Open Sans";
+    cursor: pointer;
+    position: relative;
+     min-width: 220px;
+    padding: 8px 12px;
+    text-align: left;
+    white-space: nowrap;
+}
+.branch-selector button::after{
+    position: absolute;
+    content:"";
+    width: 0px;
+    left: 0px;
+    height: 3px;
+    bottom:-10px;
+    background-color: red;
+    transition:0.4s ease-in-out;
+}
+.branch-selector button:hover::after{
+    width: 100%;
+}
+.branch-selector button.active::after {
+    width: 100%;             
+}
+
+.branch-info-grid{
+    padding-top:40px;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(400px,1fr));
+    cursor: pointer;
+    gap:30px 24px;
+    
+}
+.icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+.info-card{
+    padding:61px 70px;
+    border:1px solid #c9c9c9;
+    text-align: center;
+}
+
+.branch-selector button, 
+.info-card {
+    text-decoration: none;
+}
+
+.info-card h4{
+    margin-top:5px;
+    font-size:16px;
+    font-family: "Open Sans";
+    color:#c9c9c9;
+}
+.info-card p{
+    font-size:16px;
+    font-family: "Open Sans";
+    color:#c9c9c9;
+}

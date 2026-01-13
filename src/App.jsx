@@ -12,6 +12,7 @@ import Newbaneshwor from "./components/Newbaneshwor";
 import Jhamsikel from "./components/Jhamsikel";
 import Tangal from "./components/Tangal";
 import Allmenu from "./components/Allmenu";
+import Contact from "./components/Contact"
 
 function Home() {
   return (
@@ -39,6 +40,8 @@ function App() {
         <Route path="/jhamsikhel" element={<Jhamsikel />} />
         <Route path="/tangal" element={<Tangal />} />
         <Route path="/fullmenu" element={<Allmenu />} />
+        <Route path="/contact" element={<Contact />} />
+        
         
       </Routes>
 
