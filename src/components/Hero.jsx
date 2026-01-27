@@ -1,6 +1,6 @@
 import React from "react";
-// import herobg from "../assets/hero.webp";
 import "../styles/Hero.css";
+import {Link} from "react-router-dom"
 import arrow from "../assets/arrow.svg";
 
 function Hero() {
@@ -16,9 +16,9 @@ function Hero() {
       </div>
       <div className="list">
         <ul>
-          <li>Menu</li>
-          <li>Gallery</li>
-          <li>Contact</li>
+          <a href="#blue"><li>Menu</li></a>
+          <a href="/contact"><li>Contact</li></a>
+          <a href="#blue"><li>Gallery</li></a>
         </ul>
         <div clasName="icon">
           <img src={arrow} alt="arrow-icon"/>

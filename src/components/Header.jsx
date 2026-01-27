@@ -1,64 +1,116 @@
-import React, { useState } from 'react';
-import '../styles/Header.css';
-import jimbu from '../assets/jimbu.svg';
-import triplogo from '../assets/trip-logo.svg';
+import React, { useState } from "react";
+import "../styles/Header.css";
+import jimbu from "../assets/jimbu.svg";
+import triplogo from "../assets/trip-logo.svg";
+import { Link, useNavigate } from "react-router-dom";
 
 function Header() {
-  const [hamopen, setHamopen] = useState(false);
-  const [open, setOpen] = useState(false);
+  const [hamOpen, setHamOpen] = useState(false);
+  const [locationOpen, setLocationOpen] = useState(false);
+  const navigate = useNavigate();
+
+  const closeAll = () => {
+    setHamOpen(false);
+    setLocationOpen(false);
+  };
 
   return (
     <>
       {/* Overlay */}
-      <div 
-        className={`nav-overlay ${hamopen ? 'active' : ''}`}
-        onClick={() => setHamopen(false)}
-      ></div>
+      {(hamOpen || locationOpen) && (
+        <div className="nav-overlay active" onClick={closeAll}></div>
+      )}
 
       <header className="header-container">
-        {/* Left: Hamburger + Nav */}
+        {/* Left */}
         <div className="left">
           <button
-            className={`hamburger ${hamopen ? 'active' : ''}`}
-            onClick={() => setHamopen(!hamopen)}
+            className={`hamburger ${hamOpen ? "active" : ""}`}
+            onClick={() => setHamOpen(!hamOpen)}
+            aria-label="Toggle navigation menu"
+            aria-expanded={hamOpen}
           >
             <span></span>
             <span></span>
             <span></span>
           </button>
 
-          <nav className={`nav ${hamopen ? 'open' : ''}`}>
-            <a href="/">Home</a>
-            <a href="/gallery" >Gallery</a>
-            <a href="/blogs" >Blogs</a>
-            <a href="/csr" >CSR</a>
-            <a href="/contact" >Contact Us</a>
-            <a href="/terms" >Terms and Conditions</a>
-            <a href="/locations" >Locations</a>
+          <nav className={`nav ${hamOpen ? "open" : ""}`}>
+            <Link to="/" onClick={closeAll}>
+              Home
+            </Link>
+            <Link to="/gallery" onClick={closeAll}>
+              Gallery
+            </Link>
+            <Link to="/blogs" onClick={closeAll}>
+              Blogs
+            </Link>
+            <Link to="/csr" onClick={closeAll}>
+              CSR
+            </Link>
+            <Link to="/contact" onClick={closeAll}>
+              Contact Us
+            </Link>
+            <Link to="/terms" onClick={closeAll}>
+              Terms & Conditions
+            </Link>
+            <Link to="/locations" onClick={closeAll}>
+              Locations
+            </Link>
           </nav>
         </div>
 
-        {/* Center: Logos */}
+        {/* Center */}
         <div className="center">
-        <a href='/'> <img src={jimbu} alt="Jimbu Logo" className="jimbu-logo" /></a> 
+          <Link to="/">
+            <img src={jimbu} alt="Jimbu Logo" className="jimbu-logo" />
+          </Link>
           <span> | </span>
-         <a href='/'> <img src={triplogo} alt="Trip Logo" className="trip-logo" /></a> 
+          <Link to="/">
+            <img src={triplogo} alt="Trip Logo" className="trip-logo" />
+          </Link>
         </div>
 
-        {/* Right: Dropdown + Book */}
+        {/* Right */}
         <div className="right">
           <div className="dropdown-container">
-            <button className="dropdown-btn" onClick={() => setOpen(!open)}>
+            <button
+              className="dropdown-btn"
+              onClick={() => setLocationOpen(!locationOpen)}
+              aria-haspopup="true"
+              aria-expanded={locationOpen}
+            >
               Locations ▼
             </button>
-            <ul className={`dropdown-menu ${open ? 'open' : ''}`}>
-              <li><a href="/kalimati">Kalimati Branch</a></li>
-              <li><a href="/newbaneshwor">New Baneshwor Branch</a></li>
-              <li><a href="/jhamsikhel">Jhamsikhel Branch</a></li>
-              <li><a href="/tangal">Tangal Branch</a></li>
+
+            <ul className={`dropdown-menu ${locationOpen ? "open" : ""}`}>
+              <li>
+                <Link to="/kalimati" onClick={closeAll}>
+                  Kalimati Branch
+                </Link>
+              </li>
+              <li>
+                <Link to="/newbaneshwor" onClick={closeAll}>
+                  New Baneshwor Branch
+                </Link>
+              </li>
+              <li>
+                <Link to="/jhamsikhel" onClick={closeAll}>
+                  Jhamsikhel Branch
+                </Link>
+              </li>
+              <li>
+                <Link to="/tangal" onClick={closeAll}>
+                  Tangal Branch
+                </Link>
+              </li>
             </ul>
           </div>
-          <button className="book">Book a Table</button>
+
+          
+          <button className="book" onClick={()=> navigate('/contact')}>
+            Book a Table 
+          </button>
         </div>
       </header>
     </>

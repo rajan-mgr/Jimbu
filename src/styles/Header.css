@@ -209,17 +209,16 @@
   background-color:green;
 }
 
-/* --- Book Button --- */
-.book {
-  /* background: rgba(230, 57, 70, 0.8); */
-  background: rgba(255, 255, 255, 0); /* fully transparent */
+
+.book {  
+  background: rgba(255, 255, 255, 0); 
   backdrop-filter: blur(15px);
   color: white;
   padding: 20px 36px;
   margin-left: 16px;
   cursor: pointer;
   border: 1px solid white;
- 
+  text-decoration: none;
   transition: all 0.3s ease;
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(6px);
@@ -228,4 +227,5 @@
 .book:hover {
   color: green;
   border-color: green;
+  
 }

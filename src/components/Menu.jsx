@@ -12,7 +12,7 @@ function Menu() {
   return (
     <div className="menu-container">
       <div className="menu-title">
-        <h1>BLUE PLATE MENU</h1>
+        <h1 id="blue">BLUE PLATE MENU</h1>
         <span>Chef's Special</span>
       </div>
       <div className="starter">
